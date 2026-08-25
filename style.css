@@ -1,0 +1,110 @@
+/* SHIRUS 公開ページ共通スタイル。アプリ本体（userInterfaceStyle: dark）に合わせた暗色。
+   外部フォント・外部CSSは読まない（1ファイル完結＝GitHub Pagesで確実に出る）。 */
+
+:root {
+  --bg: #0a0a12;
+  --panel: #14141f;
+  --line: #2a2a3a;
+  --text: #e8e6e0;
+  --muted: #9a97a8;
+  --accent: #d9b45f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', 'Segoe UI', sans-serif;
+  line-height: 1.85;
+  font-size: 16px;
+}
+
+.wrap {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 5rem;
+}
+
+header.site {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.brand {
+  font-size: 1.05rem;
+  letter-spacing: 0.28em;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 1.5rem 0 0.5rem;
+}
+
+h2 {
+  font-size: 1.05rem;
+  margin: 2.5rem 0 0.5rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+ol,
+ul {
+  padding-left: 1.35rem;
+  margin: 0.75rem 0;
+}
+
+li {
+  margin: 0.4rem 0;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.lead {
+  font-size: 1.05rem;
+}
+
+.note {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 0.6rem;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+a {
+  color: var(--accent);
+}
+
+.lang {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+footer.site {
+  border-top: 1px solid var(--line);
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
